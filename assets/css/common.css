@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-  transform: scale(1.05);
+  opacity: .7;
 }
 
 main {
@@ -45,4 +45,18 @@ main {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+}
+
+.animated {
+  animation: tilting 1s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes tilting {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
