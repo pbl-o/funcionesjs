@@ -10,31 +10,31 @@ const cuadro = document.querySelector("#key");
 document.addEventListener("keydown", (e) => {
   // solo cambio de color
 
-  if (e.key === "a") {
+  if (e.key === "a" || e.key === 'A') {
     theColor = "pink";
     cambiarColor();
-  } else if (e.key === "s") {
+  } else if (e.key === "s"|| e.key ==='S') {
     theColor = "orange";
     cambiarColor();
-  } else if (e.key === "d") {
+  } else if (e.key === "d" || e.key === 'D') {
     theColor = "lightblue";
     cambiarColor();
   }
 
   // cambio de color + creación de elemento
-  else if (e.key === "q") {
+  else if (e.key === "q" || e.key === 'Q' ) {
     theColor = "purple";
     agregarElemento(theColor);
-  } else if (e.key === "w") {
+  } else if (e.key === "w" || e.key === 'W' ) {
     theColor = "gray";
     agregarElemento(theColor);
-  } else if (e.key === "e") {
+  } else if (e.key === "e" || e.key === 'E' ) {
     theColor = "brown";
     agregarElemento(theColor);
   }
 
   //tecla para eliminar elementos
-  else if (e.key === "r") {
+  else if (e.key === "r" || e.key === 'R' ) {
     eliminarElemento();
   } else {
     alert(
