@@ -27,16 +27,3 @@ p {
   text-align: center;
 }
 
-.animated {
-  animation: tilting 1s infinite;
-  animation-direction: alternate;
-}
-
-@keyframes tilting {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
