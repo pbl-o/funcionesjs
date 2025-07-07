@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keydown (5)</title>
-    <link rel="stylesheet" href="./assets/css/common.css">
-    <link rel="stylesheet" href="./assets/css/keydown.css">
-</head>
-<body>
-
-        <nav>
-                
-        <ul>
-                        <li>
-                <a href="./index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="./pintar.html">pintar</a>
-            </li>
-            <li>
-                <a href="./4_colores.html">4 colores</a>
-            </li>
-            <li>
-                <a href="./5_keydown.html">5 keydown </a>
-            </li>
-        </ul>
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/keydown.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="./index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="./pintar.html">pintar</a>
+        </li>
+        <li>
+          <a href="./4_colores.html">colores</a>
+        </li>
+        <li>
+          <a href="./5_keydown.html">keydown </a>
+        </li>
+      </ul>
     </nav>
 
     <main>
+      <div class="leyenda">
+        <h3>
+          Cada tecla corresponde a un cambio de color o la creación/destrucción
+          de un elemento html
+        </h3>
+        <p>a = ROSA | s = NARANJA | d = CELESTE</p>
+        <p>q = MORADO | w = GRIS | e = CAFE</p>
+        <p>** q | w | e => agregar elemento</p>
+        <p>** r = eliminar elemento</p>
+      </div>
 
-        <div class="leyenda">
+      <div
+        id="key"
+        style="
+          height: 200px;
+          width: 200px;
+          background-color: white;
+          border: 1px solid black;
+        "
+      ></div>
 
-            <h3>Cada tecla corresponde a un cambio de color o la creación/destrucción de un elemento html</h3>
-            <p>a = ROSA | s = NARANJA | d = CELESTE</p>
-            <p>q = MORADO | w = GRIS | e = CAFE</p>
-            <p>** q | w | e =>  agregar elemento</p>
-            <p>** r = eliminar elemento</p>
-
-        </div>
-
-        <div id="key" style="height: 200px; width: 200px; background-color: white; border: 1px solid black;">
-
-        </div>
-
-        <section>
-
+      <section>
         <!-- Aquí se irán almacenando los nuevos elementos-->
-
-        </section>
+      </section>
     </main>
-    
-   <script src="./assets/js/5_keydownchange.js"></script> 
-</body>
+
+    <script src="./assets/js/5_keydownchange.js"></script>
+  </body>
 </html>
