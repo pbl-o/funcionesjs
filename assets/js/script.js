@@ -13,7 +13,6 @@ const pintarArea = (ele, color = 'green') => {
 
 
 //listener
-
 element.addEventListener('click', (e) => {
     state = !state;
     if(state){

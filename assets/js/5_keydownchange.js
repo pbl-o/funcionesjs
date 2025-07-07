@@ -64,12 +64,13 @@ let cambiarColor = (element = cuadro, color = theColor) => {
 // Función Agregar elemento:
 /*Se crea un div con texto y una clase para fines estéticos, 
 posteriormente se incorpora dentro de la sección del documento*/
-let agregarElemento = () => {
+let agregarElemento = (color) => {
     let newCuadro = document.createElement('div');
     newCuadro.innerText = 'Nuevo Elemento';
     //Para tratar propiedades de estilo ajenas a aquellas pedidas en el desafío, le atribuyo una clase que será tratada desde el css.
     newCuadro.setAttribute('class', 'newdiv');
     section.appendChild(newCuadro);
+    cambiarColor(newCuadro, color)
 
 }
 
