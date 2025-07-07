@@ -8,9 +8,15 @@ body{
   width: 100%;
 }
 
+nav {
+  background-color: #3b3b3b;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+
 header {
 
- 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,13 +24,6 @@ header {
   padding: 1rem;
 }
 
-nav {
- 
-  background-color: #3b3b3b;
-  height: 5vh;
-  padding: 1rem;
-  margin-bottom: 3rem;
-}
 
 nav ul {
   display: flex;
@@ -37,7 +36,7 @@ a {
   text-decoration: none;
   color: #ddd;
   font-weight: 700;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
@@ -73,3 +72,8 @@ img{
   }
 }
 
+@media (max-width: 576px){
+  a{
+    font-size: .8rem;
+  }
+}
